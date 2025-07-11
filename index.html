@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-brand"><h2><i class="fas fa-cog"></i> Admin</h2></div>
+    <ul class="sidebar-menu">
+      <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> Users</a></li>
+      <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+      <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2><label for="nav-toggle"><i class="fas fa-bars"></i></label> Dashboard</h2>
+      <div class="user-wrapper">
+        <img src="https://via.placeholder.com/40" alt="Avatar" />
+        <div>
+          <h4>Admin Name</h4>
+          <small>Super Admin</small>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="cards">
+        <div class="card">
+          <div>
+            <h3>200</h3>
+            <span>Users</span>
+          </div>
+          <div><i class="fas fa-user"></i></div>
+        </div>
+        <div class="card">
+          <div>
+            <h3>150</h3>
+            <span>Sales</span>
+          </div>
+          <div><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="card">
+          <div>
+            <h3>75%</h3>
+            <span>Performance</span>
+          </div>
+          <div><i class="fas fa-chart-pie"></i></div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th><th>Email</th><th>Role</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>John Doe</td><td>john@example.com</td><td>User</td><td><span class="status active">Active</span></td></tr>
+            <tr><td>Jane Smith</td><td>jane@example.com</td><td>Admin</td><td><span class="status pending">Pending</span></td></tr>
+            <tr><td>Mary Jane</td><td>mary@example.com</td><td>User</td><td><span class="status active">Active</span></td></tr>
+            <tr><td>Mike Tyson</td><td>mike@example.com</td><td>User</td><td><span class="status inactive">Inactive</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
